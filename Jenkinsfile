@@ -5,7 +5,7 @@ pipeline {
             steps {
                // sh "rmdir  /s /q TicketBookingServiceJunitTesting"
                 sh "git clone https://github.com/mjsanthosh/TicketBookingServiceJunitTesting.git"
-               // sh "mvn clean -f TicketBookingServiceJunitTesting"
+               sh "mvn clean -f TicketBookingServiceJunitTesting"
             }
         }
         stage('install') {
